@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+  "name": "Budget manager",
+  "version": "1.0.0",
+  "action": {
+    "default_icon": {              
+      "16": "browser.png",   
+      "24": "browser.png",   
+      "32": "browser.png"    
+    },
+    "default_title": "Budget manager",   
+    "default_popup": "popup.html"  
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "contexmenu.js"
+    
+  },
+
+    "permissions": [
+        "storage",
+        "notifications",
+        "contextMenus"
+      ]
+    
+}
